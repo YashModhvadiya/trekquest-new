@@ -25,5 +25,4 @@ urlpatterns = [
     path('customer/', include("customer.urls")),
     path('home/',include("home.urls")),
     path('', v , name="login_home")
-]
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

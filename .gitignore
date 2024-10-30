@@ -1,0 +1,49 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Django specific
+*.sqlite3
+db.sqlite3
+media/
+
+# Logs
+*.log
+
+# Pytest
+.cache
+.pytest_cache/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Other configurations
+*.pdb
+*.egg-info/
+*.egg
+dist/
+build/
