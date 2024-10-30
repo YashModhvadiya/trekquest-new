@@ -83,7 +83,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -130,6 +129,8 @@ AUTHENTICATION_BACKENDS = [
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'  # session engine
 SESSION_COOKIE_NAME = 'your_session_cookie_name'  # session cookie name
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Ensure this line is added
 STATICFILES_DIRS=[
    os.path.join(BASE_DIR, 'static/')
 ]
@@ -137,6 +138,5 @@ STATICFILES_DIRS=[
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Ensure this line is added
+# STATIC_URL = 'static/'
 
